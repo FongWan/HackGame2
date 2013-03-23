@@ -1,0 +1,254 @@
+html {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  color: #FFF;
+  background: #333;
+  font: 14px/1.2 Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+p,
+#record {
+  margin: 0 0 1em;
+}
+
+a {
+  color: #FFF;
+}
+
+#logo {
+  margin: 0;
+  text-indent: -3000px;
+  text-align: center;
+}
+
+#logo.big {
+  width: 300px;
+  height: 100px;
+  margin: 100px auto 30px;
+  background: url(/hackgame/resources/images/logo_big.jpg) no-repeat;
+}
+
+#logo.small {
+  width: 950px;
+  height: 90px;
+  margin: 0 auto;
+  background: url(/hackgame/resources/images/logo_small.gif) no-repeat left center;
+}
+
+.snippetText {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  min-width: 34px;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 15px;
+  border: 1px solid #E40;
+  border-radius: 4px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #E40;
+  background-image: -webkit-linear-gradient(top, #F80, #E40);
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-image: -webkit-linear-gradient(top, #F80, #E30);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  background-image: -webkit-linear-gradient(top, #F80, #E30);
+}
+
+#globalBody {
+  min-height: 200px;
+  border-top: 1px solid #929292;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #6A6A6A;
+}
+
+#contentWrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+#mainContent {
+  float: left;
+  width: 575px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(100, 100, 100, 0.1);
+  background: #E6E6E6;
+  text-align: left;
+  overflow: hidden;
+}
+
+#levelTitle,
+#progressTitle {
+  height: 50px;
+  line-height: 51px;
+  margin: 0;
+  padding: 0 22px;
+  border-bottom: 1px solid #111;
+  background: #222;
+  background-image: -webkit-linear-gradient(top, #444, #222);
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+#levelNumber {
+  color: #ff3300;
+}
+
+#levelContent {
+  margin: 25px;
+  padding: 20px;
+  border: 1px solid #CCC;
+  background: #F5F5F5;
+  color: #333;
+}
+
+
+#message {
+  margin: 10px 0 25px;
+  padding: 0;
+}
+
+.input {
+  display: inline-block;
+  width: 200px;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.input:focus {
+  outline: none;
+}
+
+#errorMessage {
+  font-size: 12px;
+  color: #F31;
+}
+
+#sidebar {
+  float: right;
+  width: 360px;
+  margin-top: 10px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  background: #E6E6E6;
+  text-align: left;
+  color: #333;
+  overflow: hidden;
+}
+
+#progressTitle {
+  color: #CCC;
+}
+
+#levelList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#levelList li {
+  height: 52px;
+  line-height: 52px;
+  padding: 0 42px;
+  border-bottom: 1px solid #CCC;
+  background: url(/hackgame/resources/images/icons.png) 15px 20px no-repeat;
+  cursor: default;
+}
+
+#levelList strong {
+  display: inline-block;
+  width: 55px;
+}
+
+#levelList .current {
+  background-color: #FFC;
+}
+
+#levelList .locked {
+  background-color: #999;
+  background-position: 15px -14px;
+  color: #666;
+}
+
+#levelList .unlocked {
+  background-color: #AFA;
+  background-position: 15px -47px;
+}
+
+#levelList #honorWall {
+  background: #F9F9F9 url(/hackgame/resources/images/icons.png) 14px -87px no-repeat;
+  color: #F30;
+  font-weight: 700;
+}
+
+#startAgain {
+  margin: 0;
+  padding: 10px 5px;
+  background: #111;
+  color: #DDD;
+  text-align: center;
+  cursor: pointer;
+}
+
+#startAgain:hover {
+  color: #FFF;
+}
+
+#tip {
+  padding: 10px;
+  background: #FD7;
+  font-size: 10px;
+}
+
+#tip::before {
+  content: 'Conocimiento:';
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+#globalFooter {
+  width: 950px;
+  margin: 25px auto 50px;
+  font-size: 11px;
+  text-align: left;
+}
+
+#social {
+  float: right;
+}
+
+#socialMain {
+  margin-top: 90px;
+}
+
+#shareButton {
+  display: inline-block;
+  vertical-align: middle;
+}
